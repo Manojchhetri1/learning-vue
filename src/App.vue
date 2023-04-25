@@ -16,6 +16,7 @@
     <HomeComponent data="Hello from home component" msg="It is a properties test"/>
     <WelcomeComponent />
     <h1>{{ title }}</h1>
+    <userList />
     <childParent v-on:changeText="updateText($event)" />
   </div>
 </template>
@@ -24,6 +25,8 @@
 import HomeComponent from './components/HomeComponent.vue';
 import WelcomeComponent from './components/WelcomeComponent.vue';
 import childParent from './components/childParent.vue';
+import userList from './components/userList.vue';
+
 
 export default {
   name: "App",
@@ -31,6 +34,7 @@ export default {
     HomeComponent,
     WelcomeComponent,
     childParent,
+    userList,
   },
   data() {
     return {
